@@ -1,0 +1,508 @@
+body {
+    font-family: 'Raleway', sans-serif;
+ }
+
+h1{
+  text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin-left: auto;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  background-color: #75b7ea;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  height: 60px;
+  width: 180px;
+}
+
+  /* Navigation styles */
+
+nav{
+  font-size: 20px;
+  width: 100%;
+  color: white;
+  background-color: #5AB3F4;
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: top;
+}
+
+.navList{  
+  width: 40%;
+  display:flex;
+  justify-content: space-around;
+}
+
+.navList li{
+  padding-top: 25px;
+}
+
+.navList .btn{
+  height: 30%;
+  width: 25%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.logo img{
+  background-color: white;
+  position:absolute;
+  top: 10;
+  left: 100px;
+  height: 85px;
+  max-width: auto;
+  padding: 0%;
+}
+
+.focus{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+
+#heroSpace{
+  margin-top: 30px;
+  width: 100%;
+  display:grid;
+  place-items: center;
+  background-color: #5AB3F4;
+  color: white;
+  padding-bottom: 30px;
+  grid-template-columns: 25% 25% 15% 20%;
+  grid-template-rows:  10% 15% 30% 40%;
+  grid-template-areas: 
+  "heroImg heroImg aboutMeH1 aboutMeH1"
+  "heroImg heroImg aboutMeH2 aboutMeH2"
+  "heroImg heroImg aboutMe aboutMeButton"
+  "heroImg heroImg myskills myskills"
+  ;
+}
+
+/* Hero Image */
+
+.heroImg{
+  grid-area: heroImg;
+  height: 800px;
+  padding: 25px;
+}
+
+/* About Me */
+
+
+#aboutMeH1{
+  padding-top: 20px;
+  text-align: center;
+  grid-area:aboutMeH1;
+}
+
+
+#aboutMeH2{
+  grid-area:aboutMeH2;
+  width: 725px;
+  margin: 0 auto;
+}
+
+#aboutMe{
+  font-size: 24px;
+  grid-area:aboutMe;
+  width: 700px;
+  margin: 0 auto;
+}
+
+
+.aboutMeButton{
+  position: relative;
+  left: 100px;
+  top: 70px;
+  grid-area: aboutMeButton;
+}
+
+#myskills{
+  font-size: 18px;
+  grid-area: myskills;
+  width: 750px;
+}
+
+
+/* My Work */
+
+  #myworkH1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #myWork{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #75b7ea 35%, rgba(90,179,244,1) 100%);
+    color:white;
+    width: 100%;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    display:grid;
+    place-items: center;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows:  50% 50% ;
+    grid-template-areas: 
+    "itinereasy canadaPost"
+    "awayhome BabyThrift"
+    ;
+  }
+
+  .workTitle{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .workDesc{
+    max-width: 80%;
+  }
+
+  .workGrid a{ 
+    position:relative;
+    left: 200px
+  }
+
+/* Itinereasy Case study */
+
+  #itinereasy{
+    grid-area:itinereasy;
+    max-width: 85%;
+  }
+
+
+  /* Canada Post Case study  */
+
+  #canadaPost{
+    grid-area:canadaPost;
+    max-width: 85%;
+  }
+
+
+/* A Way Home Case Study */
+
+  #awayhome{
+    grid-area:awayhome;
+    padding-top: 100px;
+    max-width: 85%;
+  }
+
+
+
+/* BabyThrift Case Study */
+
+  #BabyThrift{
+    grid-area:BabyThrift;
+    padding-top: 100px;
+    max-width: 85%;
+    
+  }
+
+
+/* Footer */
+
+footer{
+  border:1px solid black;
+  background-color:#5ab3f4;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 100px;
+}
+
+footer h2{
+  padding-bottom: 20px;
+}
+
+footer .text-center{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerImage{
+  display: grid;
+  position: relative;
+  align-items: start;
+}
+
+.footerLinks{
+  font-weight: 600;  
+  display: flex;
+  justify-content:space-evenly;
+  vertical-align:auto;
+}
+
+/* Typography CSS */
+h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 40px;
+}
+
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+
+/* Mobile Nav */
+  nav{
+    height: 83px;
+    width: 90%;
+    color: white;
+    background-color: #17af95;
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: top;
+  }
+  
+  li{
+    display:none;
+  }
+  
+  .inline-block{
+    display: inline-block;
+  }
+  
+  .logo img{
+    left: 200px;
+    top: 15px;
+    height: 66px;
+    max-width: auto;
+    padding: 0%;
+    z-index: 100;
+  }
+
+
+/* Mobile Hero Space */
+
+  #heroSpace{
+    margin-top: 30px;
+    width: 90%;
+    display:grid;
+    background-color: #5AB3F4;
+    color: white;
+    grid-template-columns: 40% 50%;
+    grid-template-rows:  25% 25% 30% 10%;
+    grid-template-areas: 
+    "aboutMeH1 aboutMeH1"
+    "heroImg aboutMeH2"
+    "heroImg aboutMe"
+    "aboutMeButton aboutMeButton"
+    ;
+  }
+
+  #aboutMeH1{
+    padding-top: 20px;
+    width: 110%;
+    text-align: center;
+    grid-area:aboutMeH1;
+    margin: 0 auto;
+  }
+  
+  
+  #aboutMeH2{
+    grid-area:aboutMeH2;
+    font-size: 24px;
+    padding-left: 25px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  #aboutMe{
+    font-size: 16px;
+    padding-left: 25px;
+    width: 110%;
+    grid-area:aboutMe;
+    margin: 0 auto;
+  }
+  
+  
+  #aboutMeButton{
+    position: relative;
+    top: 10px;
+    left: 250px;
+    grid-area: aboutMeButton;
+  }
+  
+  .heroImg{
+    height: 100%;
+    width: 90%;
+    grid-area: heroImg;
+}
+
+.heroImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+  #myskills{
+    display: none;
+  }
+
+/* Mobile My Work */
+
+#myWork{
+  background: rgb(255,255,255);
+  color: black;
+  width: 90%;
+  margin-top: 70px;
+  display:grid;
+  grid-template-columns: 90% ;
+  grid-template-rows:  25% 25% 25% 25%;
+  grid-template-areas: 
+  "itinereasy" 
+  "canadaPost"
+  "awayhome" 
+  "BabyThrift"
+  ;
+}
+
+#itinereasy{
+  grid-area:itinereasy;
+  margin-left: 5px;
+  max-width: 100%;
+}
+
+#itinereasy img{
+  object-fit:contain;
+  width: 120%;
+
+}
+
+#itinereasy p{
+  position: relative;
+  left: 10%;
+  text-align: left;
+}
+
+#itinereasy button{
+  position: relative;
+  left: 35%;
+  text-align: center;
+}
+
+
+
+#canadaPost{
+  grid-area:canadaPost;
+  margin-left: 5px;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+#canadaPost img{
+  object-fit:contain;
+  width: 135%;
+
+}
+
+#canadaPost p{
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+
+#canadaPost button{
+  position: relative;
+  left: 35%;
+  text-align: center;
+}
+
+#awayhome{
+  grid-area:awayhome;
+  max-width: 100%
+}
+
+#awayhome img{
+  object-fit:contain;
+  width: 120%;
+
+}
+
+#awayhome p{
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+
+#awayhome button{
+  position: relative;
+  left: 35%;
+  text-align: center;
+}
+
+#BabyThrift{
+  grid-area:BabyThrift;
+  margin-left: 0px;
+  padding-top: 120px;
+  max-width: 85%;
+
+}
+
+#BabyThrift img{
+  object-fit:contain;
+  margin-left: 10%;
+  width: 120%;
+}
+
+#BabyThrift p{
+  position: relative;
+  left: 10%;
+  width: 120%;
+  text-align: center;
+}
+
+#BabyThrift button{
+  position: relative;
+  left: 45%;
+  text-align: center;
+}
+
+/* Mobile Footer */
+footer{
+  margin-top: 200px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.footerLinks{
+  padding-bottom: 20px;
+  font-weight: 600;  
+  display: flex;
+  justify-content:space-evenly;
+  vertical-align:auto;
+}
+
+.footerImage{
+  display: grid;
+  position: relative;
+  align-items: start;
+}
+
+}
+
+
